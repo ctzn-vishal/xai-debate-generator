@@ -73,8 +73,6 @@ class GrokClient {
       temperature = 0.7,
       maxTokens = 2000,
       topP = 1,
-      frequencyPenalty = 0,
-      presencePenalty = 0,
       stop = [],
       useSearch = false
     } = options;

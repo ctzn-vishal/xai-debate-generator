@@ -376,8 +376,8 @@ ${debateResult.personas.persona2.content.content}
       </Card>
 
       {/* X/Twitter Sources */}
-      {(debateResult.personas.persona1.content.sourcesUsed?.length > 0 ||
-        debateResult.personas.persona2.content.sourcesUsed?.length > 0) && (
+      {((debateResult.personas.persona1.content.sourcesUsed?.length ?? 0) > 0 ||
+        (debateResult.personas.persona2.content.sourcesUsed?.length ?? 0) > 0) && (
         <Card>
           <CardHeader className="pb-3">
             <CardTitle className="flex items-center gap-2 text-lg">
@@ -391,7 +391,7 @@ ${debateResult.personas.persona2.content.content}
           <CardContent>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Liberal Perspective Sources */}
-              {debateResult.personas.persona1.content.sourcesUsed?.length > 0 && (
+              {(debateResult.personas.persona1.content.sourcesUsed?.length ?? 0) > 0 && (
                 <div>
                   <h4 className="font-semibold mb-3 text-blue-700 dark:text-blue-300">
                     Liberal Perspective Sources
@@ -416,7 +416,7 @@ ${debateResult.personas.persona2.content.content}
               )}
 
               {/* Conservative Perspective Sources */}
-              {debateResult.personas.persona2.content.sourcesUsed?.length > 0 && (
+              {(debateResult.personas.persona2.content.sourcesUsed?.length ?? 0) > 0 && (
                 <div>
                   <h4 className="font-semibold mb-3 text-red-700 dark:text-red-300">
                     Conservative Perspective Sources
