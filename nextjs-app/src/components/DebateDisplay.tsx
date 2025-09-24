@@ -397,7 +397,7 @@ ${debateResult.personas.persona2.content.content}
                     Liberal Perspective Sources
                   </h4>
                   <div className="space-y-2">
-                    {debateResult.personas.persona1.content.sourcesUsed.map((source, index) => (
+                    {debateResult.personas.persona1.content.sourcesUsed?.map((source, index) => (
                       <a
                         key={index}
                         href={source}
@@ -422,7 +422,7 @@ ${debateResult.personas.persona2.content.content}
                     Conservative Perspective Sources
                   </h4>
                   <div className="space-y-2">
-                    {debateResult.personas.persona2.content.sourcesUsed.map((source, index) => (
+                    {debateResult.personas.persona2.content.sourcesUsed?.map((source, index) => (
                       <a
                         key={index}
                         href={source}
