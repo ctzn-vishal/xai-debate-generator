@@ -63,7 +63,7 @@ export class VoiceEnhancer {
   private createEnhancementPrompt(
     contentSample: string,
     persona: PersonaProfile,
-    biasLevel: number
+    _biasLevel: number
   ): string {
     const signaturePhrases = persona.signaturePhrases.slice(0, 2).join('" or "');
 

@@ -51,6 +51,7 @@ interface DebateResult {
         title: string;
         modelUsed: string;
         tokenUsage: any;
+        sourcesUsed?: string[];
         timestamp: string;
       };
     };
@@ -65,6 +66,7 @@ interface DebateResult {
         title: string;
         modelUsed: string;
         tokenUsage: any;
+        sourcesUsed?: string[];
         timestamp: string;
       };
     };
